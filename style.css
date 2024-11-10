@@ -1,0 +1,288 @@
+/* reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+:root {
+    --primary-color: #143c57;
+    /* Main color for highlights () */
+    --secondary-color: #f4f4f4;
+    /* Light background for the resume (off-white) */
+    --accent-color: #333;
+    /* Dark text color */
+    --font-family: 'Roboto', sans-serif;
+    /* Modern, clean font */
+    --heading-color: #2C3E50;
+    /* Dark color for headings */
+    --border-color: #ddd;
+    /* Light border color */
+}
+
+body {
+    padding: 5rem;
+}
+
+
+#resume-form {
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    width: 80%;
+
+}
+
+
+form {
+    margin: auto;
+    background-color: var(--secondary-color);
+    border-radius: 8px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    padding: 20px;
+
+
+}
+
+#resume-form {
+    width: 80%;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    margin: 0px 104px;
+}
+
+h1 {
+    font-size: 40px;
+    font-weight: 200;
+    text-align: center;
+    padding-bottom: 2rem;
+    color: var(--primary-color);
+}
+
+.ProfileImg {
+    display: flex;
+    justify-content: center;
+}
+
+img {
+    width: 19%;
+    margin-bottom: 28px;
+    cursor: pointer;
+}
+
+legend {
+    font-size: 24px;
+    cursor: pointer;
+}
+
+fieldset {
+    width: 90%;
+    margin: 40px 38px;
+    padding: 22px 24px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    border: none;
+}
+
+label {
+    font-weight: 100;
+    line-height: 26px;
+    font-size: 23px;
+}
+
+input {
+    margin: 1rem;
+    width: 90%;
+    height: 2rem;
+    border-radius: 4px;
+    border: none;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+input,
+placeholder {
+    border: none;
+    font-size: 12px;
+    padding: 17px 13px;
+    letter-spacing: 0.1rem;
+}
+
+
+/* btn */
+#btn {
+    display: flex;
+    justify-content: center;
+}
+
+button {
+    padding: 2px;
+    font-size: 14px;
+    width: 20%;
+    height: 3rem;
+    background-color: var(--border-color);
+    border-radius: 4px;
+    border: none;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+
+}
+
+button:hover {
+    color: white;
+    background-color: var(--heading-color);
+
+
+}
+
+
+
+
+
+/* share-options */
+
+#share-options {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Base Styles */
+:root {
+    --primary-color: #143c57;
+    /* Main color for highlights */
+    --secondary-color: #f4f4f4;
+    /* Light background for the resume (off-white) */
+    --accent-color: #333;
+    /* Dark text color */
+    --font-family: 'Roboto', sans-serif;
+    /* Modern, clean font */
+    --heading-color: #2C3E50;
+    /* Dark color for headings */
+    --border-color: #ddd;
+    /* Light border color */
+}
+
+/* General Layout for Resume */
+#resume-display {
+    background-color: var(--secondary-color);
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 30px 20px;
+    max-width: 900px;
+    width: 100%;
+    margin: 30px auto;
+    font-family: var(--font-family);
+    color: var(--accent-color);
+    line-height: 1.6;
+}
+
+/* Header Styling */
+#resume-display h1 {
+    font-size: 42px;
+    margin-bottom: 15px;
+    color: var(--heading-color);
+    font-weight: bold;
+}
+
+/* Section Titles (Education, Skills, etc.) */
+#resume-display h3 {
+    font-size: 24px;
+    color: var(--primary-color);
+    margin-top: 25px;
+    margin-bottom: 8px;
+    border-bottom: 2px solid var(--primary-color);
+    padding-bottom: 5px;
+    text-transform: uppercase;
+}
+
+/* Paragraphs/Details */
+#resume-display p {
+    font-size: 18px;
+    margin-bottom: 12px;
+}
+
+/* Contact Details */
+#resume-display .contact-info {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+#resume-display .contact-info span {
+    font-weight: bold;
+}
+
+/* Address Section Styling */
+#resume-display .address {
+    margin-top: 15px;
+    font-size: 16px;
+    color: #666;
+}
+
+/* Skills List (If displayed) */
+#resume-display .skills-list {
+    list-style-type: none;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 10px;
+}
+
+#resume-display .skills-list li {
+    background-color: #f0f0f0;
+    padding: 8px 12px;
+    border-radius: 6px;
+    text-align: center;
+}
+
+/* Work Experience Section */
+#resume-display .experience-item {
+    margin-bottom: 20px;
+    padding: 15px;
+    background-color: #f9f9f9;
+    border-left: 4px solid var(--primary-color);
+    border-radius: 8px;
+}
+
+#resume-display .experience-item h4 {
+    font-size: 20px;
+    margin-bottom: 5px;
+    color: var(--primary-color);
+}
+
+#resume-display .experience-item p {
+    font-size: 16px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    #resume-display {
+        padding: 20px;
+    }
+
+    #resume-display h1 {
+        font-size: 28px;
+    }
+
+    #resume-display p {
+        font-size: 16px;
+    }
+
+    #resume-display .skills-list {
+        grid-template-columns: 1fr 1fr;
+    }
+}
