@@ -11,23 +11,19 @@
     --secondary-color: #f4f4f4;
     --accent-color: #333;
     --heading-color: #2C3E50;
-
 }
 
 body {
     padding: 5rem;
+
 }
-
-
 
 #resume-form {
     display: flex;
     justify-content: center;
     align-items: center;
     width: 80%;
-
 }
-
 
 form {
     margin: auto;
@@ -52,7 +48,6 @@ h3 {
     font-size: 2rem;
     color: var(--heading-color);
     margin: 5px 0px 10px 16px;
-
 }
 
 p {
@@ -80,7 +75,6 @@ label {
 }
 
 input {
-
     margin: 1rem;
     width: 90%;
     height: 2rem;
@@ -96,15 +90,12 @@ placeholder {
     padding: 17px 13px;
     letter-spacing: .1rem;
 }
-
-
-/* btn */
-
-#btn {
+/* Button styles */
+.center-btn{
     display: flex;
     justify-content: center;
-}
 
+}
 .btn {
     border: 2px solid var(--primary-color);
     padding: 2px;
@@ -113,18 +104,21 @@ placeholder {
     height: 3rem;
     background-color: var(--border-color);
     border-radius: 4px;
-    margin: 12px 12px 12px 12px;
+    margin: 12px  12px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     color: var(--primary-color);
+
+    /* Flexbox to center text */
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
 }
 
+/* On hover */
 .btn:hover {
     color: white;
     background-color: var(--heading-color);
 }
-
-
-
 
 
 /* share-options */
@@ -184,6 +178,7 @@ placeholder {
 #resume-display li {
     list-style: none;
 }
+
 /* Section */
 #resume-display p {
     font-size: 13px;
@@ -213,124 +208,104 @@ placeholder {
 
 
 
-/* Responsive Design */
+
+
+
+
 @media (max-width: 768px) {
-   
-#resume-display {
-    width: auto;
-   margin-left: 7rem;
-   
-}
-#resume-display div {
-    padding-right: 52px;
-    overflow-x: hidden
-}
+    body {
+        padding: 2rem;
+    }
 
-;
-/* Header Styling */
-#resume-display h1 {
-    text-align: center;
-    border-radius: 4px;
-    font-size: 42px;
-    margin-bottom: 35px;
-    color: var(--secondary-color);
-    font-weight: bold;
-    background-color: var(--primary-color);
-}
-
-#resume-display div {
-    display: grid;
-    grid-template-columns: 3fr 1fr;
-}
-
-/* Section */
-#resume-display p {
-    font-size: 13px;
-    text-align: center;
-    color: var(--secondary-color);
-    letter-spacing: 2px;
-    width: 12rem;
-    height: 2.5rem;
-    background-color: var(--primary-color);
-    border-radius: 4px;
-    padding: 12px 0px;
-    margin-bottom: 10px;
-    text-transform: uppercase;
-}
-
-/* Paragraphs/Details */
-#resume-display h2 {
-    color: var(--primary-color);
-    letter-spacing: 2px;
-    font-size: 18px;
-    margin-left: 4rem;
-    flex-wrap: wrap;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    #resume-display {
-        flex-wrap: wrap;
-
+    #resume-form {
+        width: 100%;
+        margin: 0;
     }
 
     h3 {
-        font-size: 1rem;
+        font-size: 1.5rem;
     }
 
-    #resume-display h1 {
-        font-size: 28px;
+    fieldset {
+        width: 100%;
+        margin: 20px;
+    }
+
+    input {
+        width: 100%;
     }
 
     .btn {
-        font-size: 8px;
-        width: 6rem;
-        height: 2rem;
+        width: 7rem;
+        height: 2.5rem;
+        font-size: 12px;
+    }
+
+    #resume-display {
+        padding: 20px;
+    }
+
+    #resume-display h1 {
+        font-size: 30px;
+    }
+
+    #resume-display div {
+        display: block;
     }
 
     #resume-display p {
-        font-size: 16px;
+        width: auto;
     }
 
-    #resume-display .skills-list {
-        grid-template-columns: 1fr 1fr;
+    #resume-display h2 {
+        font-size: 16px;
+        /* margin-left: 2rem; */
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        padding: 1rem;
+    }
+
+    #resume-form {
+        margin: 0 ;
+    }
+
+    h3 {
+        font-size: 1.2rem;
+    }
+
+    fieldset {
+        margin: 0px;
+    }
+
+    input {
+        width: 100%;
+        font-size: 14px;
+    }
+
+    .btn {
+        width: 8rem;
+        height: 2.2rem;
+        font-size: 11px;
+        
+    }
+
+    #resume-display h1 {
+        font-size: 26px;
+        padding: 2rem;
+
+    }
+
+    #resume-display p {
+        width: 100%;
+        margin-left: 0rem;
+        text-align: center;
+    }
+
+    #resume-display h2 {
+        font-size: 14px;
+        margin-left: 1rem;
     }
 }
